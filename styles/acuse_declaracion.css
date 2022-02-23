@@ -57,8 +57,8 @@
 
   @bottom-left {
     content: "";
-    width: 70px;
-    height: 35px;
+    width: 90px;
+    height: 50px;
     margin-right: 10px;
     background-image: url(../assets/pdn.png);
     background-size: contain;
