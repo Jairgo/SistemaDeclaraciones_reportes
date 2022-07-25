@@ -7,6 +7,7 @@
 </head>
 
 <body>
+  
   <span id="declarationType">Declaración {{ tipoDeclaracion | replace('MODIFICACION','MODIFICACIÓN') | replace('CONCLUSION','CONCLUSIÓN') }}</span>
 
 {% if datosGenerales%}
@@ -21,6 +22,7 @@
 {% endif %}
 
   <!-- Situación patrimonial -->
+
   <div class="situacion_patrimonial">
     {% include "templates/publico/situacion_patrimonial.html" %}
   </div>

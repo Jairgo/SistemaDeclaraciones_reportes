@@ -1,25 +1,28 @@
 {
   "acuse":	{
-    "ente_publico": "SECRETARÍA EJECUTIVA DEL SISTEMA ESTATAL ANTICORRUPCIÓN",
+    "ente_publico": "H. AYUNTAMIENTO DE MIAHUTLÁN DE PORFIRIO DÍAZ",
+    "sesecc": "SECRETARÍA EJECUTIVA DEL SISTEMA ESTATAL DE COMBATE A LA CORRUPCIÓN",
     "tipo_declaracion": "DECLARACIÓN DE CONCLUSIÓN",
-    "ejercicio": "2021",
-    "lugar": "Ciudad de México",
-    "texto1_cuerpo_acuse": "CON ESTA FECHA SE RECIBIÓ SU DECLARACIÓN DE MODIFICACION, EN TÉRMINOS DE LA DECIMOPRIMERA DE LAS NORMAS E INSTRUCTIVO PARA EL LLENADO Y PRESENTACIÓN DEL FORMATO DE DECLARACIONES: DE SITUACIÓN PATRIMONIAL Y DE INTERESES, PUBLICADAS EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 23 DE SEPTIEMBRE DE 2019, PRESENTADA BAJO PROTESTA DE DECIR VERDAD, EN CUMPLIMIENTO A LO DISPUESTO EN LOS ARTÍCULOS, 108 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, 32 Y 33 FRACCIÓN II, DE LA LEY GENERAL DE RESPONSABILIDADES ADMINISTRATIVAS, DE LA QUE SE ACUSA DE RECIBO.",
-    "texto2_cuerpo_acuse": "LA DECLARACIÓN DE SITUACIÓN PATRIMONIAL Y DE INTERESES HA SIDO PRESENTADA DE MANERA ELECTRÓNICA.",
+    "ejercicio": "2022",
+    "lugar": "H. AYUNTAMIENTO DE MIAHUTLÁN DE PORFIRIO DÍAZ, OAXACA A ",
+    "texto1_cuerpo_acuse": "Con esta fecha se recibió la declaración patrimonial y de conflicto de interés, bajo protesta de decir verdad de conformidad con lo dispuesto en los artículos 108 de la Constitución Política de los Estados Unidos Mexicanos; 115 de la Constitución Política del Estado Libre y Soberano de Oaxaca; 32 y 33 fracción I de la Ley General de Responsabilidades Administrativas; 30 y 32 de la Ley de Responsabilidades Administrativas del Estado y Municipios de Oaxaca; y 126 Ter de la Ley Orgánica Municipal del Estado de Oaxaca.",
+    "texto2_cuerpo_acuse": "La declaración de situación patrimonial y de intereses ha sido presentada de manera electrónica.",
     "servidor_publico_recibe": {
-      "nombre": "Juan Perez Tellez",
-      "cargo": "Director general de Responsabilidades y Verificación Patrimonial"
+      "nombre": "ARQ. EFREN MARTÍNEZ PÉREZ",
+      "cargo": "CONTRALORÍA Y TRANSPARENCIA MUNICIPAL",
+      "municipio":"H. AYUNTAMIENTO DE MIAHUTLÁN DE PORFIRIO DÍAZ, OAXACA."
     }
   },
   "declaracion": {
-    "ente_publico": "SECRETARÍA EJECUTIVA DEL SISTEMA ESTATAL ANTICORRUPCIÓN",
+    "ente_publico": "H. AYUNTAMIENTO DE MIAHUTLÁN DE PORFIRIO DÍAZ",
+    "sesecc": "SECRETARÍA EJECUTIVA DEL SISTEMA ESTATAL DE COMBATE A LA CORRUPCIÓN",
     "subtitulo": "DECLARACIÓN PATRIMONIAL Y DE INTERESES",
     "tipo_declaracion": "DECLARACIÓN DE CONCLUSIÓN",
-    "ejercicio": "2021",
+    "ejercicio": "2022",
     "servidor_publico_recibe": {
-      "nombre": "Juan Perez Tellez",
-      "cargo": "Director general de Responsabilidades y Verificación Patrimonial"
+      "nombre": "ARQ. EFREN MARTÍNEZ PÉREZ",
+      "cargo": "CONTRALORÍA Y TRANSPARENCIA MUNICIPAL"
     },
-    "texto_declaratoria": "BAJO PROTESTA DE DECIR VERDAD, PRESENTO A USTED MI DECLARACIÓN PATRIMONIAL Y DE INTERESES, CONFORME A LO DISPUESTO EN LOS ARTÍCULOS, 108 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, 32 Y 33 FRACCIÓN III, DE LA LEY GENERAL DE RESPONSABILIDADES ADMINISTRATIVAS."
+    "texto_declaratoria": "BAJO PROTESTA DE DECIR VERDAD, PRESENTO A USTED MI DECLARACIÓN PATRIMONIAL Y DE INTERESES, CONFORME A LO DISPUESTO EN LOS ARTÍCULOS, 108 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, 32 Y 33 FRACCIÓN I, DE LA LEY GENERAL DE RESPONSABILIDADES ADMINISTRATIVAS."
   }
 }

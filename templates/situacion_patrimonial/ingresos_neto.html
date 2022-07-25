@@ -72,6 +72,34 @@
       <div class="column right-size text-justify text-light white-background">{{ ingresos.actividadFinanciera.remuneracionTotal.valor }} {{ ingresos.actividadFinanciera.remuneracionTotal.moneda }}</div>
     </div>
   {% endif %}
+  <!-- AGREGADO POR SESECC-->
+
+  <div class="row white-background-wd-100">
+    <h4 class="text-left no-margin">Actividad Enajenacion</h4>
+  </div>
+
+  {% for actividad in ingresos.actividadEnajenacion.actividades %}
+    {% if actividad.tipoEnajenacion %}
+      <div class="row">
+        <div class="column left-size text-left blue-background">Tipo Instrumento</div>
+        <div class="column right-size text-justify text-light white-background">{{ actividad.tipoEnajenacion.valor }}</div>
+      </div>
+    {% endif %}
+    {% if actividad.remuneracion %}
+      <div class="row">
+        <div class="column left-size text-left blue-background">Remuneración</div>
+        <div class="column right-size text-justify text-light white-background">{{ actividad.remuneracion.valor }} {{ actividad.remuneracion.moneda }}</div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  {% if ingresos.actividadEnajenacion.remuneracionTotal %}
+    <div class="row">
+      <div class="column left-size text-left blue-background">Remuneración Total</div>
+      <div class="column right-size text-justify text-light white-background">{{ ingresos.actividadEnajenacion.remuneracionTotal.valor }} {{ ingresos.actividadEnajenacion.remuneracionTotal.moneda }}</div>
+    </div>
+  {% endif %}
+
+  <!-- AGREGADO POR SESECC-->
 
   <div class="row white-background-wd-100">
     <h4 class="text-left no-margin">Servicios Profesionales</h4>
