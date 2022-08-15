@@ -120,4 +120,130 @@
             {{ datosEmpleoCargoComision.domicilioExtranjero.pais|countryFormat }}</div>
     </div>
   {% endif %}
+
+  {% if datosEmpleoCargoComision.cuentaConOtroCargoPublico %}
+    <div class="row white-background-wd-100">
+      <h4 class="text-left no-margin">Otro empleo, cargo o comisión</h4>
+    </div>    
+    <div class="row">
+      <div class="column left-size text-left blue-background">Nivel/Orden de Gobierno</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.nivelOrdenGobierno | replace('_', ' ') }} </div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Ambito Público</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.ambitoPublico | replace('_', ' ') }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Nombre Ente Publico</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.nombreEntePublico }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Área de Adscripción</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.areaAdscripcion }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Empleo, Cargo o Comisión</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.empleoCargoComision }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">¿Contratado Por Honorarios?</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.contratadoPorHonorarios|toSiNo }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Nivel de Empleo, Cargo o Comisión</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.nivelEmpleoCargoComision }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Función Principal</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.funcionPrincipal }}</div>
+    </div>
+    <div class="row">
+      <div class="column left-size text-left blue-background">Fecha de {{ 'Toma' if tipoDeclaracion == 'INICIAL' or tipoDeclaracion == 'MODIFICACION' else 'Conclución'}} de Posesion</div>
+      <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.fechaTomaPosesion|formatdatetime }}</div>
+    </div>
+    {% if datosEmpleoCargoComision.otroEmpleoCargoComision.telefonoOficina %}
+      <div class="row">
+        <div class="column left-size text-left blue-border-bottom blue-background">Teléfono Oficina</div>
+        <div class="column text-justify text-light white-background" style="width: 29%">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.telefonoOficina.telefono }}</div>
+        <div class="column text-left blue-background blue-border-bottom blue-border-top" style="width: 10%">Ext.</div>
+        <div class="column text-justify text-light white-background" style="width: 25%">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.telefonoOficina.extension }}</div>
+      </div>
+    {% endif %}
+    <div class="row white-background-wd-100">
+      <h4 class="text-left no-margin">Domicilio {% if datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico %} México {% elif datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero %} Extranjero {% endif %}</h4>
+    </div>
+    {% if datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico %}
+      <div class="row">
+        <div class="column left-size text-left blue-background">CALLE</div>
+        <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.calle }} </div>
+      </div>
+      <div class="row">
+        <div class="column left-size text-left blue-background">NÚMERO EXTERIOR</div>
+        <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.numeroExterior }}</div>
+      </div>
+      <div class="row">
+        <div class="column left-size text-left blue-background">NÚMERO INTERIOR</div>
+        <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.numeroInterior | dataEmpty }}</div>
+      </div>
+      <div class="row">
+        <div class="column left-size text-left blue-background">CÓDIGO POSTAL</div>
+        <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.codigoPostal }}</div>
+      </div>
+      <div class="row">
+        <div class="column left-size text-left blue-background">COLONIA</div>
+        <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.coloniaLocalidad }}</div>
+      </div>
+      {% if datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.municipioAlcaldia %}
+        <div class="row">
+          <div class="column left-size text-left blue-background">ALCALDIA</div>
+          <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.municipioAlcaldia.valor }}</div>
+        </div>
+      {% endif %}
+      {% if datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.entidadFederativa %}
+        <div class="row">
+          <div class="column left-size text-left blue-background">ENTIDAD FEDERATIVA</div>
+          <div class="column right-size text-justify text-light white-background">{{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioMexico.entidadFederativa.valor }}</div>
+        </div>
+      {% endif %}
+    {% endif %}
+    {% if datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero %}
+      <div class="row">
+          <div class="column left-size text-left blue-background">CALLE</div>
+          <div class="column right-size text-justify text-light white-background">
+              {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.calle }} </div>
+      </div>
+      <div class="row">
+          <div class="column left-size text-left blue-background">NÚMERO EXTERIOR</div>
+          <div class="column right-size text-justify text-light white-background">
+              {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.numeroExterior }}</div>
+      </div>
+      {% if datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.numeroInterior %}
+          <div class="row">
+              <div class="column left-size text-left blue-background">NÚMERO INTERIOR</div>
+              <div class="column right-size text-justify text-light white-background">
+                  {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.numeroInterior | dataEmpty }}</div>
+          </div>
+      {% endif %}
+      <div class="row">
+          <div class="column left-size text-left blue-background">CÓDIGO POSTAL</div>
+          <div class="column right-size text-justify text-light white-background">
+              {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.codigoPostal }}</div>
+      </div>
+      <div class="row">
+          <div class="column left-size text-left blue-background">Ciudad</div>
+          <div class="column right-size text-justify text-light white-background">
+              {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.ciudadLocalidad }}</div>
+      </div>
+      <div class="row">
+          <div class="column left-size text-left blue-background">estado</div>
+          <div class="column right-size text-justify text-light white-background">
+              {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.estadoProvincia }}</div>
+      </div>
+      <div class="row">
+          <div class="column left-size text-left blue-background">país</div>
+          <div class="column right-size text-justify text-light white-background">
+              {{ datosEmpleoCargoComision.otroEmpleoCargoComision.domicilioExtranjero.pais|countryFormat }}</div>
+      </div>
+    {% endif %}
+  {% endif %}
 </article>
