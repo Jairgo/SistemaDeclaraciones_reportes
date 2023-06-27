@@ -1,0 +1,37 @@
+<article>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+        <tbody>
+            <tr>
+                <td style="text-align:left;"><img src="https://lh3.googleusercontent.com/xc7fhSPF2E4ce9Zs3lp6z78GMhkX8PE5pSS6LvbDGRtJprB2wVftcyTgCo1ZFA2g0MEyNafvUUizJYuyWlYN7GrIEnyHYvxV9mF8duaSE_p5Sa_wKD8FaisDjHQ7xqMhjZhR01vU_FEJQ_CLhFI8ndy-TT3y1WJ3ggUKHKz6bF6PogcNidTzXhjI55zXynq0-zgBUasqXPeGsfJepP29u_bKO8PPNObUVNmnZhFBQG-5imON1L1eLhQ2Jqwqj1XdtSr_xNzgq3tFByRSdckXk62S-Z-kC2lSuvHQb8WdGcZxQDPFRkIqi_aMNzemKqDfgIODtgwpipmVrC3gHz9sOvkrh6lyGzw_rrDkX05mPYT8Y6s3AlIRTsD98Oh9qOgsG141xcFX9iqyzubqUN7OViRoTsgAUBRj3Q4VCLKKw7Tvremkr-L13VB19XfJuhq1PpF86Vpq78kOwtSSvFPtwbHDVUbwXAxcBX_n05rLLKTCdRvpOuEzeo9_qAVp4tUhGGtSEZOUqjKYlAQpuBly4UGtaEwCuzi2g3I1zzkPUk-ytgr2cEv8uSV_f_rAVIl6ZX9UHmlWRSd9Dw1lVoUTW9rsf1iklAL8aqj1hZ39IoGDVApsDStYf3jn_V0gQi49tKxQK2QOi-teNlDB_398wgMuU0iZjpz-HMc3VQQe4OZKF6DBb9FHFu47HHwWvhC3uhzua6tR3__C99l18yt4jGObKXh97w-ZFzxGH6O-NBQReSrUekOZtF3ZG3tlz0aW-Bjh26rd5QCcbY3IWQ3GkAAF6IymiJBueCM_pMTMuq_yGnbDc21YZSAcVnMPGqRmUiQ2BxDqso7lQUCvtO10fyL6CRj2qcX-yeTyEg=w214-h220-no?authuser=2"
+                    style="width:100px;height:100px;" /></td>
+                <td colspan="4" style="text-align:center">
+                </td>
+                <td style="text-align:right;"><img src="https://lh3.googleusercontent.com/lP39mno6-GexGW3yh4DnRdCOObCCcbYZ_yK1f58OszNmtoU29GjxtauK7OmWYXY4hxQNNQ6LiWlWWSSRhTUzrlODLxVa1uQkYKd7FzftNexaK42CDrf4EAEY_m5gzYC_Ut1cVFJ5c-bY2sP4BvKQY3zRjI6XGlRZOA_i9ENnK9wb9NoTSXiPTn5THtREFVvv4slwW0seywhLwFvUQ3sGPCT5Ivh1SJntGjGfXC06RVgEhbEyUfpsuelmLDD7yT9nio_nNQNwryFaehdBYHNqygqxrabumF7GW3RoD0xoKrH9QPa7xysKrTaJdh0atfeLy-Bzvd7ZaGKW3zlJlAGtwGAdTYD9qMEmiC6PVRUEoeh6r69EG6Sifp6ypw4dahG1QeYq0TpN3mC9M1JP_aGZ4Rtfo6dyzxOT8pRDmu8SPA_RFa1gxsL_Awz5mNgfx5BtovDFIh9wq7WfxmvI3-8R_5euCUa_dZUvWGptZHRxXVYm6YmRIsk-kRKhak3VT-eLGR4s0Tpholbw9l00tZPqQHFbmvnglvRhQ0__6jIVNU5tNpgWqqQaqyJ0nOg4MZs5NTcJoVtSP2MICSQZJo1_yntm9lDAQopIbgFWIAYoFzGL1R1YMmq3vc7YyitnNk24y01MibL9nPVCQFc-hLLMnEgkUbRx5J0e6zghZ0oBOMK1ZHDQYo9ViErxz95UnJKd_Ly8fn7k0yPa58zhhwONgCiUCzF9eMvJKcV-32fI9sjfkxNW8U38DcW5HKXbw4LBcP7xN4C7_Gr018CWlJCzn3VYYhZXh0LF6aget-wWtPec0t8ewBtNfA3oM2dQo4--PeDsDxqD4SekY4CPTvdxaKwfYrAR0UgspMAGVQ=s369-no?authuser=2"
+    style="width:100px;height:100px;" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="text-center">
+        {{ acuse.sesecc | replaceInstitution(institucion, 'sesecc') }} <br>
+        {{ acuse.tipo_declaracion }} {{ acuse.ejercicio }}. <br>
+        ID DE DECLARACIÓN: {{ _id }} <br>
+        {{ acuse.lugar }} {{ updatedAt | formatdatetime('%d de %B de %Y') | dateTranslation }}
+    </h2>
+    <ul class="no-decoration mt-80px">
+        <li class="bold">C. {{datosGenerales.nombre}} {{datosGenerales.primerApellido}} {{datosGenerales.segundoApellido | dataEmpty}}</li>
+        <li class="bold">E-MAIL: {% if datosGenerales.correoElectronico %} {{datosGenerales.correoElectronico.institucional | dataEmpty}} {% endif %}</li>
+    </ul>
+    <h3>PRESENTE.</h3>
+    <section>
+        <p>
+            {{ acuse.texto1_cuerpo_acuse }}
+        </p>
+        <p>{{ acuse.texto2_cuerpo_acuse }}</p>
+    </section>
+    <p class="text-center">ATENTAMENTE</p>
+    <p class="text-center mt-100px">
+        {{ acuse.servidor_publico_recibe.nombre | replaceInstitution(institucion, 'nombre') }} <br>
+        {{ acuse.servidor_publico_recibe.cargo | replaceInstitution(institucion, 'cargo') }} <br>
+        {{ acuse.ente_publico | replaceInstitution(institucion, 'ente_publico') }} <br>
+    </p>
+</article>
